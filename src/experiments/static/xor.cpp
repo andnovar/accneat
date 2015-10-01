@@ -13,16 +13,28 @@ static struct XorInit {
 
                 vector<Test> tests = {
                     {{
-                            {{F, F}, {F}, weight},
+                            {{F, F, F}, {F}, weight},
                     }},
                     {{
-                            {{F, T}, {T}, weight},
+                            {{F, F, T}, {T}, weight},
                     }},
                     {{
-                            {{T, F}, {T}, weight},
+                            {{F, T, F}, {T}, weight},
                     }},
                     {{
-                            {{T, T}, {F}, weight}
+                            {{F, T, T}, {F}, weight}
+                    }},
+                    {{
+                            {{T, F, F}, {T}, weight}
+                    }},
+                    {{
+                            {{T, F, T}, {F}, weight}
+                    }},
+                    {{
+                            {{T, T, F}, {F}, weight}
+                    }},
+                    {{
+                            {{T, T, T}, {T}, weight}
                     }}
                 };
 
